@@ -1,0 +1,72 @@
+/* 
+https://www.youtube.com/watch?v=Uu5Mgjhx8Y8&t=10s 
+https://codepen.io/kathykato/pen/gOOjgmP
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+
+:root {
+  --bg: #fff;
+  --text: #382b22;
+  --light-pink: #fff0f0;
+  --pink: #ffe9e9;
+  --dark-pink: #f9c4d2;
+  --pink-border: #b18597;
+  --pink-shadow: #ffe3e2;
+}
+
+.btn-3d {
+  font-family: "Rubik", sans-serif;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #b18597;
+  padding: 1em 1.5em;
+  border-radius: 0.75em;
+  font-weight: 500;
+  color: #382b22;
+  text-transform: uppercase;
+  background: #fff0f0;
+  transform-style: preserve-3d;
+  transition: 0.15s cubic-bezier(0, 0, 0.6, 1);
+}
+
+.btn-3d::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #b18597;
+  border-radius: inherit;
+  background: #f9c4d2;
+  /* box-shadow: 0 0 0 2px rgba(177, 133, 151, 0.5),
+    0 0.5em 0 0 rgba(255, 227, 226, 0.5); */
+  transform: translate3d(0, 0.75em, -1em);
+  transition: 0.15s cubic-bezier(0, 0, 0.6, 1);
+}
+
+.btn-3d:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+
+.btn-3d:hover::before {
+  /* box-shadow: 0 0 0 2px rgba(177, 133, 151, 0.5),
+    0 0.3em 0 0 rgba(255, 227, 226, 0.5); */
+  transform: translate3d(0, 0.5em, -1em);
+}
+
+.btn-3d:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+
+.btn-3d:active::before {
+  box-shadow: 0 0 0 2px rgba(177, 133, 151, 0.5), 0 0 #090909;
+  transform: translate3d(0, 0, -1em);
+}

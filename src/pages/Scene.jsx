@@ -4,9 +4,9 @@ import {
   PerspectiveCamera,
 } from "@react-three/drei";
 import { Suspense, useEffect, useState } from "react";
-import { Car } from "./Car";
-import { Ground } from "./Ground";
-import { Track } from "./Track";
+import { Car } from "../components/Car";
+import { Ground } from "../components/Ground";
+import { Track } from "../components/Track";
 
 export function Scene() {
   const [thirdPerson, setThirdPerson] = useState(false);
@@ -16,8 +16,9 @@ export function Scene() {
     function keydownHandler(e) {
       if (e.key === "k") {
         // random is necessary to trigger a state change
-        if(thirdPerson) setCameraPosition([-6, 3.9, 6.21 + Math.random() * 0.01]);
-        setThirdPerson(!thirdPerson); 
+        if (thirdPerson)
+          setCameraPosition([-6, 3.9, 6.21 + Math.random() * 0.01]);
+        setThirdPerson(!thirdPerson);
       }
     }
 
@@ -33,9 +34,7 @@ export function Scene() {
       />
 
       <PerspectiveCamera makeDefault position={cameraPosition} fov={40} />
-      {!thirdPerson && (
-        <OrbitControls target={[-2.64, -0.71, 0.03]} />
-      )}
+      {!thirdPerson && <OrbitControls target={[-2.64, -0.71, 0.03]} />}
 
       <Ground />
       <Track />

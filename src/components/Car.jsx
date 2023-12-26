@@ -3,8 +3,8 @@ import { useFrame, useLoader } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import { Quaternion, Vector3 } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useControls } from "./useControls";
-import { useWheels } from "./useWheels";
+import { useControls } from "../hook/useControls";
+import { useWheels } from "../hook/useWheels";
 import { WheelDebug } from "./WheelDebug";
 
 export function Car({ thirdPerson }) {
