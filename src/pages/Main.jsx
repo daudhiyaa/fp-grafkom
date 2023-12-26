@@ -24,7 +24,7 @@ const Main = () => {
       <Link to={"/contributors"}>
         <Button3D
           className="absolute z-10 left-10 bottom-10"
-          buttonTitle="Contributors"
+          buttonTitle="See Contributors"
         />
       </Link>
     </>

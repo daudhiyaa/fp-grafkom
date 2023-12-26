@@ -7,6 +7,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Car } from "../components/Car";
 import { Ground } from "../components/Ground";
 import { Track } from "../components/Track";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 export function Scene() {
   const [thirdPerson, setThirdPerson] = useState(false);
@@ -27,7 +28,13 @@ export function Scene() {
   }, [thirdPerson]);
 
   return (
-    <Suspense fallback={null}>
+    <Suspense
+      fallback={
+        <div className="flex h-full justify-center items-center">
+          <ClimbingBoxLoader color="#36d7b7" loading={true} />
+        </div>
+      }
+    >
       <Environment
         files={process.env.PUBLIC_URL + "/textures/envmap.hdr"}
         background={"both"}
