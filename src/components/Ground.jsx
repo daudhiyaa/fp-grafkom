@@ -58,10 +58,10 @@ export function Ground() {
         rotation-x={-Math.PI * 0.5}
         // rotation={[-Math.PI / 2, 0, 0]}
       >
-        <planeGeometry args={[12, 12]} />
+        <planeGeometry args={[0, 0]} />
         <meshBasicMaterial
           opacity={0.325}
-          alphaMap={gridMap}
+          // alphaMap={gridMap}
           transparent={true}
           color={"white"}
         />
@@ -69,14 +69,14 @@ export function Ground() {
 
       <mesh
         ref={meshRef}
-        position={[-2.285, -0.015, -1.325]}
+        position={[-2, -0.04, 0.5]}
         rotation-x={-Math.PI * 0.5}
         rotation-z={-0.079}
       >
         <circleGeometry args={[6.12, 50]} />
         <MeshReflectorMaterial
-          aoMap={aoMap}
-          alphaMap={alphaMap}
+          // aoMap={aoMap}
+          // alphaMap={alphaMap}
           transparent={true}
           color={[0.5, 0.5, 0.5]}
           envMapIntensity={0.35}
