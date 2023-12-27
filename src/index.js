@@ -8,6 +8,7 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import Contributors from "./pages/Contributors";
 import Main from "./pages/Main";
 import Landing from "./pages/Landing";
+import Login from "./pages/Login";
 
 const App = () => {
   return (
@@ -21,7 +22,12 @@ const App = () => {
       <div className="m-0 w-full h-full overflow-hidden">
         <Router>
           <Routes>
-            <Route path="/" Component={Landing} />
+            <Route path="/" Component={Login} />
+            <Route
+              path="/landing"
+              render={(props) => <Contributors {...props} />}
+              Component={Landing}
+            />
             <Route path="/main" Component={Main} />
             <Route path="/contributors" Component={Contributors} />
           </Routes>

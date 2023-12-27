@@ -19,12 +19,12 @@ https://codepen.io/kathykato/pen/gOOjgmP
   font-family: "Rubik", sans-serif;
   vertical-align: middle;
   display: inline-block;
-  cursor: pointer;
   text-decoration: none;
   border: 2px solid #b18597;
   padding: 1em 1.5em;
   border-radius: 0.75em;
   font-weight: 500;
+  font-size: small;
   color: #382b22;
   text-transform: uppercase;
   background: #fff0f0;

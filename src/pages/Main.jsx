@@ -21,12 +21,20 @@ const Main = () => {
         <p>press arrows for flips</p>
       </div>
 
-      <Link to={"/contributors"}>
-        <Button3D
-          className="absolute z-10 left-10 bottom-10"
-          buttonTitle="See Contributors"
-        />
-      </Link>
+      <div>
+        <Link to={"/"}>
+          <Button3D
+            className="absolute left-10 bottom-28"
+            buttonTitle="Back to Homepage"
+          />
+        </Link>
+        <Link to={"/contributors"}>
+          <Button3D
+            className="absolute left-10 bottom-10"
+            buttonTitle="See Contributors"
+          />
+        </Link>
+      </div>
     </>
   );
 };

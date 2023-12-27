@@ -27,7 +27,7 @@ const Contributors = () => {
       </div>
 
       <Link to={"/main"} className="absolute left-10 bottom-10">
-        <Button3D buttonTitle="Main Session" />
+        <Button3D className="cursor-pointer" buttonTitle="Main Session" />
       </Link>
     </div>
   );
