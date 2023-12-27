@@ -27,7 +27,7 @@ const Login = () => {
                 setNama(name);
                 if (name.length >= 3) {
                   setButtonTitle("Start Now!");
-                  setHref("/landing");
+                  setHref("/home");
                 } else {
                   setButtonTitle("Input Your Name");
                   setHref("");

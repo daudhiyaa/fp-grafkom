@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button3D from "../components/Button3D";
 
-const Landing = ({ nama }) => {
+const Home = ({ nama }) => {
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-start">
       <div className="max-w-4xl mx-auto p-8">
@@ -23,4 +23,4 @@ const Landing = ({ nama }) => {
   );
 };
 
-export default Landing;
+export default Home;

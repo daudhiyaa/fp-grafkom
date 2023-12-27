@@ -22,7 +22,7 @@ const Main = () => {
       </div>
 
       <div>
-        <Link to={"/"}>
+        <Link to={"/home"}>
           <Button3D
             className="absolute left-10 bottom-28"
             buttonTitle="Back to Homepage"
