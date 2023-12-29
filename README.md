@@ -10,6 +10,23 @@
 | Alfa Fakhrur Rizal Zaini             | 5025211214 |
 | Nadira Milha Nailul Fath             | 5025211253 |
 
+## Tech Stack
+
+This project built using :
+
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="50" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" height="50" alt="tailwindcss logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" height="50" alt="threejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg" height="50" alt="blender logo"  />
+  <img width="12" />
+  <img src="public/images/spline.png" height="50" alt="spline logo"  />
+  <img width="12" />
+</div>
+
 ## Credits
 
 - 3D Car Asset
