@@ -2,15 +2,17 @@ import { useBox, useRaycastVehicle } from "@react-three/cannon";
 import { useFrame } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import { Quaternion, Vector3 } from "three";
-import { useGLTF } from "@react-three/drei";
-import { useControls } from "../hook/useControls";
-import { useWheels } from "../hook/useWheels";
+import { useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
+
+import { useControls } from "../../hook/useControls";
+import { useWheels } from "../../hook/useWheels";
 import { WheelDebug } from "./WheelDebug";
 
 export function Car({ thirdPerson }) {
   // thanks to the_86_guy!
   // https://sketchfab.com/3d-models/low-poly-car-muscle-car-2-ac23acdb0bd54ab38ea72008f3312861
-  let result = useGLTF("/models/car.glb").scene;
+  let result = useLoader(GLTFLoader, "/assets/car.glb").scene;
 
   const position = [-1.5, 0.5, 3];
   const width = 0.15;

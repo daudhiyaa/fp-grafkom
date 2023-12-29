@@ -4,9 +4,9 @@ import {
   PerspectiveCamera,
 } from "@react-three/drei";
 import { Suspense, useEffect, useState } from "react";
-import { Car } from "../components/Car";
-import { Ground } from "../components/Ground";
-import { Track } from "../components/Track";
+import { Car } from "../components/car/Car";
+import { Ground } from "../components/track/Ground";
+import { Track } from "../components/track/Track";
 
 export function Scene() {
   const [thirdPerson, setThirdPerson] = useState(false);

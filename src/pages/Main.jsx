@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { Scene } from "./Scene";
 import { Physics } from "@react-three/cannon";
 import { Link } from "react-router-dom";
-import Button3D from "../components/Button3D";
+import Button3D from "../components/button/Button3D";
 
 const Main = () => {
   return (

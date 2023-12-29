@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import TextInput from "../components/TextInput";
-import Button3D from "../components/Button3D";
+import Input from "../components/input/Input";
+import Button3D from "../components/button/Button3D";
 
 const Login = () => {
   const [nama, setNama] = useState("");
@@ -15,7 +15,7 @@ const Login = () => {
           <div
             className={`flex flex-col ${nama.length >= 3 ? "gap-0" : "gap-2"}`}
           >
-            <TextInput
+            <Input
               id="name"
               type="name"
               name="name"

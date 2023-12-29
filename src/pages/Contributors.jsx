@@ -3,7 +3,7 @@ import "../index.css";
 import React, { Suspense } from "react";
 import { Link } from "react-router-dom";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-import Button3D from "../components/Button3D";
+import Button3D from "../components/button/Button3D";
 
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 

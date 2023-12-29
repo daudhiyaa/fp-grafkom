@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-import Button3D from "../components/Button3D";
+import Button3D from "../components/button/Button3D";
 
 const Home = () => {
   const location = useLocation();

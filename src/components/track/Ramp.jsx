@@ -1,9 +1,10 @@
 import { useRef } from "react";
 import { useTrimesh } from "@react-three/cannon";
-import { useGLTF } from "@react-three/drei";
+import { useLoader } from "@react-three/fiber";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
 
 export function Ramp() {
-  const result = useGLTF("/models/ramp.glb");
+  const result = useLoader(GLTFLoader, "/assets/ramp.glb");
 
   const geometry = result.scene.children[0].geometry;
 

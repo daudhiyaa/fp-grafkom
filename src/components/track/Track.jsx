@@ -1,12 +1,13 @@
-import { useLoader } from "@react-three/fiber";
 import { useEffect } from "react";
+import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
-import { useGLTF } from "@react-three/drei";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
+
 import { Ramp } from "./Ramp";
 import { ColliderBox } from "./ColliderBox";
 
 export function Track() {
-  const kamar = useGLTF("/models/kamar.glb");
+  const kamar = useLoader(GLTFLoader, "/assets/kamar.glb");
 
   const colorMap = useLoader(TextureLoader, "./textures/track.png");
 
