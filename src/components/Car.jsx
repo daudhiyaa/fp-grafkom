@@ -10,10 +10,7 @@ import { WheelDebug } from "./WheelDebug";
 export function Car({ thirdPerson }) {
   // thanks to the_86_guy!
   // https://sketchfab.com/3d-models/low-poly-car-muscle-car-2-ac23acdb0bd54ab38ea72008f3312861
-  let result = useLoader(
-    GLTFLoader,
-    process.env.PUBLIC_URL + "/models/car.glb"
-  ).scene;
+  let result = useLoader(GLTFLoader, "./models/car.glb").scene;
 
   const position = [-1.5, 0.5, 3];
   const width = 0.15;
