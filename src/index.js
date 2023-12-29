@@ -2,13 +2,9 @@ import "./index.css";
 
 import React, { Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
-import Contributors from "./pages/Contributors";
-import Main from "./pages/Main";
-import Home from "./pages/Home";
-import Login from "./pages/Login";
+import Router from "./routes/Router";
 
 const App = () => {
   return (
@@ -20,18 +16,7 @@ const App = () => {
       }
     >
       <div className="m-0 w-full h-full overflow-hidden">
-        <Router>
-          <Routes>
-            <Route path="/" Component={Login} />
-            <Route
-              path="/home"
-              render={(props) => <Contributors {...props} />}
-              Component={Home}
-            />
-            <Route path="/main" Component={Main} />
-            <Route path="/contributors" Component={Contributors} />
-          </Routes>
-        </Router>
+        <Router />
       </div>
     </Suspense>
   );
