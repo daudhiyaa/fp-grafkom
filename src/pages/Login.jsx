@@ -38,7 +38,7 @@ const Login = () => {
               <p className="text-red-500">Minimum 3 Letter Required</p>
             )}
           </div>
-          <Link to={href}>
+          <Link to={href} state={{ nama: nama }}>
             <Button3D
               buttonTitle={buttonTitle}
               className={`${
