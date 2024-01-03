@@ -27,6 +27,24 @@ This project built using :
   <img width="12" />
 </div>
 
+## Result
+
+#### Landing Page
+![image](https://github.com/daudhiyaa/fp-grafkom/assets/90663569/4711a446-302a-4765-ba18-96d33e3b4c5b)
+
+#### Filled Landing Page
+![image](https://github.com/daudhiyaa/fp-grafkom/assets/90663569/e0639f29-5b44-4cec-bd82-4b4dd5738823)
+
+#### Home Page
+![image](https://github.com/daudhiyaa/fp-grafkom/assets/90663569/d06a7ae2-a3a2-455b-87ec-4c714cac915a)
+
+#### Main Page
+![grafkom waras](https://github.com/daudhiyaa/fp-grafkom/assets/90663569/bbe5e20f-4199-4df6-bb8e-14401719b133)
+
+#### Contributors Page
+![grafkom bro](https://github.com/daudhiyaa/fp-grafkom/assets/90663569/c4c98d0c-ed13-4470-a493-83afcd97bf8a)
+
+
 ## Credits
 
 - 3D Car Asset
