@@ -5,9 +5,10 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
 
 import { Ramp } from "./Ramp";
 import { ColliderBox } from "./ColliderBox";
+import Kamar from "../../../public/assets/kamar.glb";
 
 export function Track() {
-  const kamar = useLoader(GLTFLoader, "./assets/kamar.glb");
+  const kamar = useLoader(GLTFLoader, Kamar);
 
   const colorMap = useLoader(TextureLoader, "./textures/track.png");
 
