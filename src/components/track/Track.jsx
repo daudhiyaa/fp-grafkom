@@ -7,7 +7,7 @@ import { Ramp } from "./Ramp";
 import { ColliderBox } from "./ColliderBox";
 
 export function Track() {
-  const kamar = useLoader(GLTFLoader, "/assets/kamar.glb");
+  const kamar = useLoader(GLTFLoader, "./assets/kamar.glb");
 
   const colorMap = useLoader(TextureLoader, "./textures/track.png");
 
